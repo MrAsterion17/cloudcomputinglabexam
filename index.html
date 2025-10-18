@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IT Solutions — Innovative Information Technology</title>
+  <meta name="description" content="Comprehensive IT services: cloud, cybersecurity, software engineering and managed IT support." />
+  <style>
+    /* Basic reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg,#0f1724 0%, #071126 100%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      padding:28px;
+      display:flex;justify-content:center;
+    }
+
+    .wrap{width:100%;max-width:1100px}
+        header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+            .brand{font-weight:800;letter-spacing:.6px;font-size:20px}
+                nav a{color:#9fb0c6;margin-left:16px;font-weight:600}
+                    .hero{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start;margin-bottom:18px}
+                        .hero-card{background:linear-gradient(180deg,#0b1220,#071226);padding:22px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+                             h1{font-size:28px;color:#fff;margin-bottom:8px}
+                                p.lead{color:#9fb0c6;margin-bottom:12px}
+
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:#9900ff;color:#071226;font-weight:800;margin-right:10px}
+        .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#9fb0c6}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:14px}
+        .tech{background:#0c1626;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.03);cursor:pointer;position:relative}
+            .tech img{width:100%;height:140px;object-fit:cover;display:block}
+                .tech .tag{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,0.45);padding:6px 8px;border-radius:6px;color:#fff;font-weight:700;font-size:12px}
+
+    /* Posts */
+    .posts{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+        .post{background:linear-gradient(180deg,#071226,#08172a);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+            .post h3{font-size:16px;margin-bottom:8px}
+                 .post p{color:#9fb0c6;font-size:14px}
+
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr 320px;gap:14px;margin-top:18px}
+        form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-bottom:10px}
+             form button{background:#10b981;border:0;padding:10px 14px;border-radius:8px;color:#062b14;font-weight:800}
+
+    footer{margin-top:20px;color:#94a7bd;text-align:center;font-size:13px}
+
+    /* Lightbox */
+    .lightbox{position:fixed;inset:0;background:rgba(2,6,23,0.85);display:flex;align-items:center;justify-content:center;padding:20px;visibility:hidden;opacity:0;transition:opacity .2s ease,visibility .2s}
+        .lightbox.open{visibility:visible;opacity:1}
+            .lightbox img{max-width:90%;max-height:80%;border-radius:8px;box-shadow:0 12px 40px rgba(2,6,23,0.8)}
+
+    /* Responsive */
+    @media (max-width:900px){
+    .hero{grid-template-columns:1fr;gap:12px}
+        nav a{display:none}
+            .posts{grid-template-columns:1fr}
+                .contact{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Choose Information Technology</div>
+      <nav aria-label="Main navigation">
+        <a href="#gallery">Services</a>
+        <a href="#posts">Insights</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Information Technology — Solutions & Insights</h1>
+        <p class="lead">We deliver cloud, security, and software solutions — scalable, secure and tailored to your needs.</p>
+  
+        <div>
+          <a class="btn" href="#gallery">Explore Services</a>
+          <a class="btn ghost" href="#contact">Contact Sales</a>
+        </div>
+
+        <div style="margin-top:16px;display:flex;gap:12px;align-items:center">
+          <div style="width:56px;height:56px;border-radius:10px;background:#0b2a3f;display:flex;align-items:center;justify-content:center;font-weight:800">IT</div>
+          <div>
+            <div style="color:#9fb0c6;font-size:13px">IT solutions • cloud & security • problem-solver • innovator</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h3 style="margin-bottom:8px">Featured Solution</h3>
+        <img src="https://academics.siu.edu/computing-and-technology/_common/images/itec/itec-index-banner.jpg" alt="featured solution" style="width:100%;height:170px;object-fit:cover;border-radius:8px;margin-bottom:10px" onerror="this.onerror=null;this.src='https://picsum.photos/480/280?random=1'">
+        <div style="color:#9fb0c6;font-size:14px">Showcase: scalable cloud infrastructure and managed services for modern businesses.</div>
+      </aside>
+    </section>
+
+    <section id="gallery" aria-label="IT services gallery">
+      <h2 style="margin-bottom:10px">Our Services as IT</h2>
+      <div class="gallery">
+        
+        <div class="tech" data-title="Cloud Infrastructure & Migration">
+          <img src="C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\Cloud - GIF.gif" alt="Cloud infrastructure and migration services" onerror="this.onerror=null;this.src='C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\Cloud - GIF.gif'">
+          <div class="tag">Cloud Infrastructure</div>
+        </div>
+        <div class="tech" data-title="Cybersecurity & Compliance">
+          <img src="C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\Security - GIF.gif" alt="Cybersecurity and compliance services" onerror="this.onerror=null;this.src='C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\Security - GIF.gif'">
+          <div class="tag">Cybersecurity & Compliance</div>
+        </div>
+        <div class="tech" data-title="DevOps Automation & CI/CD">
+          <img  src="C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\DevOps - GIF.gif" alt="DevOps automation and CI/CD" onerror="this.onerror=null;this.src='C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\DevOps - GIF.gif'">
+          <div class="tag">DevOps & CI/CD</div>
+        </div>
+        <div class="tech" data-title="Software Development">
+          <img src="C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\Dev - GIF.gif" alt="Custom software engineering and development" onerror="this.onerror=null;this.src='C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\Dev - GIF.gif'">
+          <div class="tag">Software Engineering</div>
+        </div>
+        <div class="tech" data-title="Data Engineering & AI Solutions">
+          <img src="C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\Data and AI - GIF.gif" alt="Data engineering, analytics and AI solutions" onerror="this.onerror=null;this.src='C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\Data and AI - GIF.gif'">
+          <div class="tag">Data & AI</div>
+        </div>
+        <div class="tech" data-title="Networking & Infrastructure Services">
+          <img src="C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\Networking - GIF.gif" alt="Networking and infrastructure solutions" onerror="this.onerror=null;this.src='C:\Users\LordAsterion17\OneDrive\Desktop\GIFs\Networking - GIF.gif'">
+          <div class="tag">Networking & Infrastructure</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="posts">
+      <h2 style="margin-top:18px;margin-bottom:10px">Insights & Articles</h2>
+      <div class="posts">
+        <article class="post">
+          <h3>Designing for Reliability</h3>
+          <p>Reliable systems start with observability and defensive design. Small investments in testing and monitoring pay off exponentially.</p>
+        </article>
+        <article class="post">
+          <h3>Balancing Speed & Security</h3>
+          <p>Shipping quickly is important, but not at the cost of security. DevSecOps practices help teams move fast safely.</p>
+        </article>
+         <article class="post">
+          <h3>Cybersecurity & Cloud Infrastructure</h3>
+          <p>Deploying quickly is important, but not at the cost of resilience. Infrastructure as Code (IaC) and automated rollback mechanisms help teams deploy fast safely while ensuring system stability.</p>
+        </article>
+        <article class="post">
+          <h3>Balancing Speed & Ethics</h3>
+          <p>Training quickly is important, but not at the cost of ethics. Responsible AI practices and bias mitigation techniques help teams move fast safely while ensuring fairness and accountability.</p>
+        </article>
+        <article class="post">
+          <h3>Balancing Speed & Reliability</h3>
+          <p>Deploying quickly is important, but not at the cost of reliability. Automated network provisioning and continuous monitoring help teams move fast safely while maintaining high network uptime.</p>
+        </article>
+        <article class="post">
+          <h3>Balancing Velocity & Trust</h3>
+          <p>Innovating quickly is important, but not at the cost of trust—the combined assurance of security, quality, stability, compliance, performance, and governance. Integrated automation, continuous feedback loops, and a culture of responsibility help teams move fast safely while delivering resilient, compliant, and high-quality solutions across all domains, from Software Development and Cloud Infrastructure to Data Engineering and Cybersecurity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" aria-label="Contact">
+      <div class="hero-card">
+        <h3>Say hello</h3>
+        <p style="color:#9fb0c6;margin-bottom:8px">Interested in our IT services or collaboration? Send a short message.</p>
+        <form id="contactForm" onsubmit="return handleContact(event)" novalidate>
+          <input id="name" type="text" placeholder="Your name" required>
+          <input id="email" type="email" placeholder="you@example.com" required>
+          <textarea id="msg" rows="4" placeholder="A short message" required></textarea>
+          <button type="submit">Send</button>
+          <div id="status" style="margin-top:10px;color:#9fb0c6;font-weight:700;display:none"></div>
+        </form>
+      </div>
+
+      <aside class="hero-card">
+        <h4>Contact & socials</h4>
+        <p style="color:#9fb0c6;margin:8px 0">Email: <a href="mailto:contact@itsolutions.example" style="color:#9900ff">Contact : 0990-190-2570</a></p>
+        <p style="color:#9fb0c6;margin:8px 0">LinkedIn: <a href="#" style="color:#9900ff">Colegio De San Juan De Letran Calamba</a></p>
+        <p style="color:#9fb0c6;margin-top:12px">Available for cloud migrations, security assessments and custom software projects.</p>
+      </aside>
+    </section>
+
+    <footer>
+        
+       <div>John Aster P. Dublin</div><div>© <span id="year"></span> IT Solutions — driving digital transformation</div> 
+    </footer>
+  </div>
+
+  <!-- Lightbox for images -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true" onclick="closeLightbox()">
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <script>
+    // update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+
+    // Gallery: open lightbox when clicking a tech
+    document.querySelectorAll('.tech').forEach(el=>{
+      el.addEventListener('click', function(){
+        const img = this.querySelector('img');
+        const src = img.src;
+        const title = this.getAttribute('data-title') || '';
+        const lb = document.getElementById('lightbox');
+        const lbimg = document.getElementById('lightboxImg');
+        lbimg.src = src;
+        lbimg.alt = title;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden','false');
+      });
+    });
+    function closeLightbox(){
+      const lb = document.getElementById('lightbox');
+      lb.classList.remove('open');
+      lb.setAttribute('aria-hidden','true');
+      document.getElementById('lightboxImg').src = '';
+    }
+
+    // Simple contact simulation
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('msg').value.trim();
+      const status = document.getElementById('status');
+      if(!name || !email || !msg){
+        status.style.display = 'block';
+        status.style.color = '#ff7b6b';
+        status.textContent = 'Please complete all fields.';
+        return false;
+      }
+      status.style.display = 'block';
+      status.style.color = '#ffd166';
+      status.textContent = 'Sending...';
+      setTimeout(()=>{
+        status.style.color = '#86efac';
+        status.textContent = 'Thanks ' + (name.split(' ')[0]||name) + '! Message received.';
+        document.getElementById('contactForm').reset();
+      },800);
+      return false;
+    }
+  </script>
+</body>
+</html>
